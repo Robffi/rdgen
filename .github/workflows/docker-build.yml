@@ -1,12 +1,8 @@
 name: update docker image
 
+# Belion fork: a imagem do rdgen e construida no proprio VM a partir deste repo; sem push automatico ao Docker Hub.
 on:
-  push:
-    branches:
-      - dev
-      - master
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
 
 jobs:
   build:
